@@ -166,3 +166,31 @@ form button:hover{
 .modal button:hover{
   transform: scale(1.1);
 }
+
+
+/* ALERT ERROR */
+.alert-error.open{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.alert-error{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: var(--bg-error);
+  color: var(--tt-error);
+
+  text-align: center;
+  padding: .8rem 0;
+  font-weight: bold;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: transform .5s;
+}
+
