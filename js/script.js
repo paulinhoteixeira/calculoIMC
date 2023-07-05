@@ -30,4 +30,18 @@ function displayResultMessage(imc) {
   Modal.open();
 }
 
+// function resetInput() {
+//   AlertError.close();
+// }
 
+// inputWeight.addEventListener("input", resetInput)
+
+inputWeight.oninput = event => {
+  AlertError.close();
+
+}
+
+inputHeight.oninput = event => {
+  AlertError.close();
+
+}
